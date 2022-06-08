@@ -1,0 +1,274 @@
+@font-face {
+    font-family: "San Francisco"; /*Police utilisée par Apple*/
+    src: url("fonts/SFNSText-Regular.otf") format("opentype");
+}
+
+html {
+	overflow-x: hidden;
+}
+
+* {
+	font-family: "San Francisco", Arial;
+}
+
+body {
+	width: 100%;
+	height: auto;
+}
+
+/*******
+*HEADER*
+*******/
+#menu_principal {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+#menu_principal li a {
+	display: block;
+	color: white;
+  	padding: 15px 40px;
+ 	text-decoration: none;
+ 	font-size: 14px;
+}
+
+#message_magasinage p {
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+#message_magasinage a:link, .liens_produits_principaux a:link, .liens_produits_secondaires a:link, #informations_supplementaires a:link {
+	text-decoration: none;
+	color: #348feb;
+}
+
+#message_magasinage a:visited, .liens_produits_principaux a:visited, .liens_produits_secondaires a:visited, #informations_supplementaires a:visited {
+	color: #348feb;
+}
+
+#message_magasinage a:hover, .liens_produits_principaux a:hover, .liens_produits_secondaires a:hover, #informations_supplementaires a:hover {
+	text-decoration: underline;
+	color: #348feb;
+}
+
+/*******
+* MAIN *
+*******/
+.produits_principaux {
+	background: black;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.produits_principaux h1 {
+	font-size: 55px;
+	margin-bottom: 0;
+}
+
+.produits_principaux h2 {
+	margin-top: 0;
+}
+
+.produits_principaux #iphone_12 {
+	background: white;
+	color: black;
+	padding-top: 40px;
+}
+
+.produits_principaux li a {
+	padding-bottom: 50px;
+}
+
+.produits_principaux img {
+	max-width: 100%;
+}
+
+.liens_produits_principaux {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.liens_produits_principaux li a {
+	display: block;
+  	padding-right: 35px;
+ 	text-decoration: none;
+ 	font-size: 20px;
+ 	text-align: center;
+}
+
+.produits_secondaires {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.colonne_produits_secondaires {
+	flex: 50%;
+	max-height: auto;
+	max-width: 50%;
+}
+
+.produits_secondaires h1 {
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.produits_secondaires h2 {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.liens_produits_secondaires {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.liens_produits_secondaires li a {
+	display: block;
+  	padding-right: 35px;
+ 	text-decoration: none;
+ 	font-size: 16px;
+ 	text-align: center;
+}
+
+#liens_produits_secondaires_noir.liens_produits_secondaires {
+	list-style-type: none;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+ 	background: black;
+}
+
+#liens_produits_secondaires_noir.liens_produits_secondaires li a {
+	display: block;
+  	padding-right: 35px;
+ 	text-decoration: none;
+ 	font-size: 16px;
+ 	text-align: center;
+}
+
+#liens_produits_secondaires_noir.liens_produits_secondaires a:link {
+	text-decoration: none;
+	color: white;
+}
+
+#liens_produits_secondaires_noir.liens_produits_secondaires a:visited {
+	color: white;
+}
+
+#liens_produits_secondaires_noir.liens_produits_secondaires a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+#apple_tv_plus_noir {
+	background: black;
+}
+
+#apple_tv_plus_noir img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+/*******
+*FOOTER*
+*******/
+#mentions {
+	color: grey;
+	font-size: 12px;
+	margin: 0 auto;
+	max-width: 65%;
+}
+
+#mentions a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#mentions a:visited {
+	color: black;
+}
+
+#mentions a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin-bottom: 0;
+}
+
+.liens_divers {
+	display: flex;
+	justify-content: center;
+}
+
+.liens_divers ul li {
+	list-style-type: none;
+	font-size: 12px;
+	height: 25px;
+	width: 175px;
+	align-items: center;
+}
+
+.liens_divers a:link, #texte_gauche_droite a:link, #liens_legaux a:link {
+	text-decoration: none;
+	color: grey;
+}
+
+.liens_divers a:visited, #texte_gauche_droite a:visited, #liens_legaux a:visited {
+	color: grey;
+}
+
+.liens_divers a:hover, #texte_gauche_droite a:hover, #liens_legaux a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+#informations_supplementaires {
+	color: grey;
+	font-size: 12px;
+	margin: 0 auto;
+	max-width: 65%
+}
+
+.alignement_gauche {
+	float: left;
+}
+
+.alignement_droite {
+	float: right;
+}
+
+#liens_legaux {
+	list-style-type: none;
+	display: flex;
+	margin: 0 auto;
+	max-width: 65%
+}
+
+#liens_legaux li a {
+	display: block;
+  	padding-right: 10px;
+ 	text-decoration: none;
+ 	font-size: 12px;
+}
